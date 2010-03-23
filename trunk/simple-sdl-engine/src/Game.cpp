@@ -1,3 +1,7 @@
+#if defined(__WIN32__)
+#include <windows.h>
+#endif
+
 #include <SDL/SDL.h>
 #include <SDL/SDL_timer.h>
 #include <SDL/SDL_video.h>
@@ -78,8 +82,15 @@ public:
 		}
 	}
 };
-
+#if defined(__WIN32__)
+int WINAPI WinMain(
+    HINSTANCE hInstance,
+    HINSTANCE hPrevInstance,
+    LPSTR lpCmdLine,
+    int nCmdShow)
+#else
 int main(int argc, char **argv)
+#endif
 {
 	TestEngine engine(640, 480);
 	engine.start(30);

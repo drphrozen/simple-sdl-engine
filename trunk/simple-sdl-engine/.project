@@ -27,7 +27,7 @@
 				</dictionary>
 				<dictionary>
 					<key>org.eclipse.cdt.make.core.buildLocation</key>
-					<value>${workspace_loc:/simple-sdl-engine/Debug_with_MinGW GCC}</value>
+					<value>${workspace_loc:/simple-sdl-engine/Release_with_MinGW GCC}</value>
 				</dictionary>
 				<dictionary>
 					<key>org.eclipse.cdt.make.core.contents</key>
