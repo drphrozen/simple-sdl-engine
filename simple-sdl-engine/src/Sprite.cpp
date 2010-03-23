@@ -15,24 +15,24 @@ Sprite::Sprite(SDL_Surface *surface, int indexes) :
 	indexes(indexes),
 	surface(surface),
 	width(surface->w/indexes),
-	height(surface->h),
-	index(0)
+	height(surface->h)
 {
 	position.w = width;
 	position.h = height;
 	setPosition(0, 0);
+	setIndex(0);
 }
 
 Sprite::Sprite(const char* image_path, int indexes) :
 	indexes(indexes),
 	surface(IMG_Load(image_path)),
 	width(surface->w/indexes),
-	height(surface->h),
-	index(0)
+	height(surface->h)
 {
 	position.w = width;
 	position.h = height;
 	setPosition(0, 0);
+	setIndex(0);
 }
 
 Sprite::~Sprite()
